@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font: normal 18pt arial;
+            background-color: rgb(168, 168, 255);
+            color: white;
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        body > h1{
+            color: black;
+            padding-top: 20px;
+            margin: 0px;
+        }
+        p{
+            padding: 50px;
+            color: rgb(93, 13, 168);
+        }
+        p strong{
+            color: white;
+        }
+        body div{
+            font: bolder;
+            text-decoration: underline black 3px;
+        }
+        div{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado:</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+            var p1 = window.document.getElementsByTagName('p')[1]
+            var corpo = window.document.body
+            document.write('Vai aparecer assim: ' +p1.innerHTML)
+           var dv = document.querySelector('div#msg')
+           dv.style.color = 'green'
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            text-align: center;
+            background-color: rgb(245, 229, 85);
+            color: rgb(0, 0, 0);
+            font: normal 20pt arial
+        }
+        body > p{
+            background-color: black;
+            color: white;
+            margin-top: 20px;
+            padding: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+    <script>
+        var n1 = Number.parseInt (window.prompt("Digite um número: "))
+        var n2 = Number.parseInt (window.prompt("Digite outro número: "))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a: ${s}`)
+    </script>
+</body>
+</html>
