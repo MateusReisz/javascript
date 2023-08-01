@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro teste</title>
+</head>
+<body>
+    <form method="get" autocomplete="on">
+    
+            <p>
+                <input type="number" name="xn1" id="xn1" placeholder="Primeiro Dígito">
+            </p>
+    
+            <p>+</p>
+            <p>
+                <input type="number" name="xn2" id="xn2" placeholder="Segundo Dígito">
+            </p>
+        
+            <p>
+                <input  type="button" value="Somar" onclick="somar()">
+                <input type="reset" value="Resetar" onclick="resetar()">
+            </p>
+    
+            <p>
+                <output name="saida" id="saida">Resultado:</output>
+            </p>
+
+    </form>
+    <script>
+            var tn1 = window.document.querySelector('input#xn1')
+            tn1.style.color = 'red'
+            var tn2 = window.document.querySelector('input#xn2')
+            tn2.style.color = 'red'
+            var res = window.document.querySelector('output#saida')
+            res.style.color = 'black'
+        function somar(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var t = n1 + n2
+            res.innerHTML = `O resultado é: ` +t
+        }
+        function resetar(){
+            res.innerHTML = `Resultado: `
+            
+        }
+
+    </script>
+</body>
+</html>
