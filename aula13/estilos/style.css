@@ -20,13 +20,16 @@ section{
     padding: 15px;
     border-radius: 10px;
     width: 500px;
-    text-align: center;
+    
     box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.377);
     
 }
+select#flista{
+    margin-top: 10px;
+    width: 150px;
+}
 div{
-    text-align: center;
-    padding: 10px;
+    padding: px;
 }
 footer{
     margin: 20px;
